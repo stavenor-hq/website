@@ -1,5 +1,0 @@
-Contact: mailto:security@stavenor.com
-Expires: 2027-09-20T00:00:00.000Z
-Preferred-Languages: en
-Canonical: https://stavenor.com/.well-known/security.txt
-Policy: https://stavenor.com/legal/#security
