@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CRA Article 14: The 24-Hour Early Warning, Field by Field</title>
+<meta name="description" content="Since 11 September 2026, CRA Article 14 requires a 24-hour early warning. What ENISA&#x27;s platform actually asks for, when the clock starts, and the three traps.">
+<link rel="canonical" href="https://stavenor.com/cra-article-14-early-warning/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CRA Article 14: The 24-Hour Early Warning, Field by Field">
+<meta property="og:description" content="Since 11 September 2026, CRA Article 14 requires a 24-hour early warning. What ENISA&#x27;s platform actually asks for, when the clock starts, and the three traps.">
+<meta property="og:url" content="https://stavenor.com/cra-article-14-early-warning/">
+<meta property="og:site_name" content="Stavenor">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#14273D">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "CRA Article 14: The 24-Hour Early Warning, Field by Field", "description": "Since 11 September 2026, CRA Article 14 requires a 24-hour early warning. What ENISA's platform actually asks for, when the clock starts, and the three traps.", "datePublished": "2026-09-20", "dateModified": "2026-09-20", "author": {"@type": "Organization", "name": "Stavenor"}, "publisher": {"@type": "Organization", "name": "Stavenor"}, "mainEntityOfPage": "https://stavenor.com/cra-article-14-early-warning/"}</script>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="site"><div class="wrap">
+<a class="brand" href="../">Stavenor</a>
+<nav class="main" aria-label="Main">
+<a href="../guides/">Guides</a>
+<a href="../cra-deadline-calculator/"><span class="lg">Deadline calculator</span><span class="sm">Calculator</span></a>
+<a class="btn" href="../#price">The pack</a>
+</nav></div></header>
+<main id="content" class="article">
+<p class="crumbs"><a href="../guides/">Guides</a></p>
+<h1 id="cra-article-14-the-24-hour-early-warning-field-by-field">CRA Article 14: The 24-Hour Early Warning, Field by Field</h1>
+<p class="updated"><span>Updated 20 September 2026</span><span>5 min read</span></p>
+<p>Since <strong>11 September 2026</strong>, every manufacturer of a product with digital elements sold in the EU must report two kinds of event under Article 14 of the Cyber Resilience Act (Regulation (EU) 2024/2847):</p>
+<ul>
+<li>an <strong>actively exploited vulnerability</strong> in its product, and</li>
+<li>a <strong>severe incident</strong> having an impact on the security of its product.</li>
+</ul>
+<p>The first filing — the <strong>early warning</strong> — is due within <strong>24 hours</strong> of the manufacturer becoming aware. This page explains when that clock starts, what ENISA's Single Reporting Platform actually requires in those 24 hours, and the three traps that catch manufacturers out.</p>
+<hr />
+<h2 id="when-does-the-24-hour-clock-start">When does the 24-hour clock start?</h2>
+<p>Not at detection. Not when management signs off. At <strong>awareness</strong>.</p>
+<p>The European Commission's guidance on the application of the CRA (document C(2026) 5252, paragraphs 213–214) sets the test. When a suspicious event is detected, or a third party reports a potential vulnerability or incident, the manufacturer should assess it <strong>immediately</strong>. It is regarded as having become aware when, after that initial assessment, it has a <strong>reasonable degree of certainty</strong> that:</p>
+<ul>
+<li>a vulnerability in its product is being actively exploited, or</li>
+<li>a severe incident has occurred and has compromised the security of its product.</li>
+</ul>
+<p>The guidance adds that the emphasis should be on <strong>prompt action</strong> to carry out the initial assessment. You cannot hold awareness back by holding the assessment back.</p>
+<p><strong>Practical rule:</strong> record two timestamps for every event — when it was <em>detected</em>, and when the initial assessment <em>concluded</em>. The distance between them is the first thing an authority will look at.</p>
+<hr />
+<h2 id="the-four-deadlines-and-a-fifth-filing">The four deadlines — and a fifth filing</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Filing</th>
+<th>Deadline</th>
+<th>Runs from</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Early warning</td>
+<td>24 hours</td>
+<td>Awareness</td>
+</tr>
+<tr>
+<td>Notification</td>
+<td>72 hours</td>
+<td>Awareness</td>
+</tr>
+<tr>
+<td>Final report — vulnerability</td>
+<td>14 days</td>
+<td>A corrective or mitigating measure becoming available</td>
+</tr>
+<tr>
+<td>Final report — severe incident</td>
+<td>1 month</td>
+<td>Submission of the 72-hour notification</td>
+</tr>
+</tbody>
+</table></div>
+<p>Note that the two final-report clocks have <strong>different triggers</strong>. They belong in your runbook as two separate paths.</p>
+<p>And there is a filing most summaries leave out: under <strong>Article 14(6)</strong>, the coordinating CSIRT may request an <strong>intermediate report</strong> on status updates at any time. The Regulation sets no deadline for it — the CSIRT does.</p>
+<hr />
+<h2 id="what-the-platform-asks-for-at-24-hours">What the platform asks for at 24 hours</h2>
+<p>This is where most runbooks are wrong. The early warning is often described as a short alert, with the substance deferred to the 72-hour notification. ENISA's own <strong>CRA SRP Glossary (version 1.3, 10 September 2026)</strong> says otherwise.</p>
+<p><strong>Required at the early warning — actively exploited vulnerability (8 fields):</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Notification type</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>255 characters</td>
+</tr>
+<tr>
+<td><strong>Summary</strong></td>
+<td><strong>4,000 characters</strong></td>
+</tr>
+<tr>
+<td>Manufacturer name</td>
+<td>system-generated</td>
+</tr>
+<tr>
+<td>Member States where the product is available</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Product name</td>
+<td>255 characters</td>
+</tr>
+<tr>
+<td>Product version</td>
+<td>255 characters</td>
+</tr>
+<tr>
+<td>Date and time you became aware</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Severe incident (9 fields):</strong> the same seven common fields, plus the awareness date and time, plus <strong>whether the incident is suspected of being caused by unlawful or malicious acts</strong> (Yes / No / Unknown).</p>
+<p>The Member States field is not just a platform convenience: the Regulation itself requires it at the early warning stage, where applicable (Article 14(2)(a) and 14(4)(a)).</p>
+<hr />
+<h2 id="three-traps">Three traps</h2>
+<h3 id="1-the-summary-is-required-at-24-hours">1. The Summary is required at 24 hours</h3>
+<p>Up to 4,000 characters covering what happened, the affected product or version, the known impact and the current mitigation status. If your procedure assumes you will write this at hour 70, you have already lost two days. Draft it in advance, outside the platform.</p>
+<h3 id="2-the-awareness-field-may-not-be-on-screen">2. The awareness field may not be on screen</h3>
+<p>In the Glossary, the awareness timestamp for a vulnerability is marked <strong>required</strong> — with ENISA's own footnote that the field will arrive in a later release of the platform. For incidents, the field is currently labelled <em>"date and time when the incident was detected"</em>. Detection is not awareness. Keep your own timestamped record. If an authority asks why your early warning arrived when it did, that record is your evidence — not the platform.</p>
+<h3 id="3-the-on-screen-72-hour-counter-is-not-your-deadline">3. The on-screen 72-hour counter is not your deadline</h3>
+<p>ENISA's FAQ confirms that the platform's 72-hour counter shows a due date <strong>48 hours after the early warning is submitted</strong> — not 72 hours after awareness. A filing can show as overdue before the legal deadline has passed, or look comfortable when it is not. Keep your own clock.</p>
+<hr />
+<h2 id="who-can-file">Who can file</h2>
+<ul>
+<li>Each manufacturer has <strong>one Primary AR</strong> (Assigned Representative) and can add <strong>up to 20 Secondary ARs</strong>. On screen, a Secondary AR's system role is displayed as <em>"AR Backup User"</em>.</li>
+<li>A Primary AR must hold a <strong>verified</strong> manufacturer association before it can invite Secondary ARs. Start early: this step is gated by the CSIRT.</li>
+<li>An invited Secondary AR must complete registration within <strong>7 days</strong>, or the invitation expires.</li>
+<li>All ARs of a manufacturer can view and update its submitted notifications. <strong>Drafts are the exception</strong> — they sit in the individual AR's account. Draft in a shared document, then transcribe.</li>
+</ul>
+<hr />
+<h2 id="two-scope-points-people-miss">Two scope points people miss</h2>
+<p><strong>Your installed base is in scope.</strong> Article 69(3) applies the reporting obligations to every in-scope product placed on the market before 11 December 2027 — including products you sold before the CRA's other obligations apply.</p>
+<p><strong>Reporting outlives support.</strong> The Commission's guidance (paragraph 210) is explicit: vulnerability handling obligations end with the support period; reporting obligations do not.</p>
+<aside class="cta"><h2 id="get-the-filing-forms-ready-before-you-need-them">Get the filing forms ready before you need them</h2>
+<p>The <strong>CRA 2026 Compliance Pack</strong> includes an early warning template (T-04) built from all 39 fields of ENISA's Glossary, with each field's character limit and required status — plus the 72-hour, final-report and intermediate-report forms, the internal procedure that defines awareness, and a printable one-page reporting clock.</p>
+<p>Every regulatory statement in the pack is traced to its source in a verification register you can check line by line.</p>
+<p><strong><a class="btn" href="../#price">See what's inside the pack</a></strong></p></aside>
+<nav class="related" aria-label="Related guides"><h2>Related guides</h2><ul><li><a href="../enisa-srp-fields-72-hour-final-report/">72-hour and final reports</a></li><li><a href="../cra-becoming-aware/">when you become aware</a></li><li><a href="../cra-severe-incident-definition/">severe incident definition</a></li><li><a href="../cra-deadline-calculator/">deadline calculator</a></li></ul></nav>
+<hr />
+<h3 id="sources">Sources</h3>
+<ul>
+<li>Regulation (EU) 2024/2847 (Cyber Resilience Act), Articles 14, 69 and 71 — Official Journal of the European Union</li>
+<li>ENISA, CRA SRP Glossary, version 1.3, 10 September 2026</li>
+<li>ENISA, Single Reporting Platform — Frequently Asked Questions, updated 17 September 2026</li>
+<li>ENISA, CRA SRP Guidance — AR User Registration</li>
+<li>European Commission, Guidance on the application of the Cyber Resilience Act, C(2026) 5252, paragraphs 210 and 213–214</li>
+</ul>
+<p><em>Position as at 20 September 2026. ENISA updates its platform guidance frequently. This page is general information, not legal advice.</em></p>
+</main>
+<footer class="site"><div class="wrap">
+<div><p><strong style="color:var(--navy)">Stavenor</strong> publishes documentation toolkits for the EU Cyber Resilience Act.</p>
+<p>Edition 2026.1. Position as at 20 September 2026. General information, not legal advice. This site sets no cookies and loads nothing from third parties.</p></div>
+<ul><li><a href="../guides/">Guides</a></li><li><a href="../cra-deadline-calculator/">Deadline calculator</a></li>
+<li><a href="https://github.com/stavenor-hq/cra-article-14-reporting-kit">Free reporting kit on GitHub</a></li><li><a href="../legal/">Legal notice and privacy</a></li></ul>
+</div></footer>
+</body>
+</html>
