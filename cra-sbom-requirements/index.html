@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CRA SBOM Requirements: What Annex I Actually Asks For</title>
+<meta name="description" content="Does the Cyber Resilience Act require an SBOM? Yes. What Annex I says about format and depth, whether it must be public, and who can ask to see it.">
+<link rel="canonical" href="https://stavenor.com/cra-sbom-requirements/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CRA SBOM Requirements: What Annex I Actually Asks For">
+<meta property="og:description" content="Does the Cyber Resilience Act require an SBOM? Yes. What Annex I says about format and depth, whether it must be public, and who can ask to see it.">
+<meta property="og:url" content="https://stavenor.com/cra-sbom-requirements/">
+<meta property="og:site_name" content="Stavenor">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#14273D">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "CRA SBOM Requirements: What Annex I Actually Asks For", "description": "Does the Cyber Resilience Act require an SBOM? Yes. What Annex I says about format and depth, whether it must be public, and who can ask to see it.", "datePublished": "2026-09-20", "dateModified": "2026-09-20", "author": {"@type": "Organization", "name": "Stavenor"}, "publisher": {"@type": "Organization", "name": "Stavenor"}, "mainEntityOfPage": "https://stavenor.com/cra-sbom-requirements/"}</script>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="site"><div class="wrap">
+<a class="brand" href="../">Stavenor</a>
+<nav class="main" aria-label="Main">
+<a href="../guides/">Guides</a>
+<a href="../cra-deadline-calculator/"><span class="lg">Deadline calculator</span><span class="sm">Calculator</span></a>
+<a class="btn" href="../#price">The pack</a>
+</nav></div></header>
+<main id="content" class="article">
+<p class="crumbs"><a href="../guides/">Guides</a></p>
+<h1 id="cra-sbom-requirements-what-annex-i-actually-asks-for">CRA SBOM Requirements: What Annex I Actually Asks For</h1>
+<p class="updated"><span>Updated 20 September 2026</span><span>3 min read</span></p>
+<p>The Cyber Resilience Act makes a software bill of materials a legal requirement for manufacturers of products with digital elements. The requirement is shorter, and in some ways narrower, than many summaries suggest.</p>
+<hr />
+<h2 id="the-text">The text</h2>
+<p><strong>Annex I, Part II, point 1:</strong> manufacturers shall identify and document vulnerabilities and components contained in their products, including by drawing up a software bill of materials in a <strong>commonly used</strong> and <strong>machine-readable</strong> format covering <strong>at the very least the top-level dependencies</strong> of the products.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Words</th>
+<th>What they mean in practice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Commonly used</td>
+<td>A recognised standard format. SPDX and CycloneDX are the two most widely used</td>
+</tr>
+<tr>
+<td>Machine-readable</td>
+<td>A file a tool can parse, not a spreadsheet or a PDF</td>
+</tr>
+<tr>
+<td>At the very least the top-level dependencies</td>
+<td>The legal minimum. Going deeper is your choice, not an obligation</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="must-it-be-public">Must it be public?</h2>
+<p><strong>No.</strong> Recital 77: manufacturers are not obliged to make the SBOM public.</p>
+<ul>
+<li>It belongs in the <strong>technical documentation</strong>, as part of the vulnerability handling information (Annex VII, item 2).</li>
+<li>It must be provided to a <strong>market surveillance authority</strong> further to a reasoned request (Annex VII, item 8).</li>
+<li>If you <strong>choose</strong> to make it available to users, the user information must say where it can be accessed (Annex II, item 9).</li>
+</ul>
+<hr />
+<h2 id="why-it-is-not-just-paperwork">Why it is not just paperwork</h2>
+<p>An SBOM generated once and filed away helps nobody. Its real job is to feed vulnerability monitoring: you cannot know that a component in your product is being exploited if you do not know the component is there. And that is what makes the Article 14 reporting obligations achievable.</p>
+<p>Inventory, monitoring, reporting: one chain. A break anywhere breaks all three.</p>
+<hr />
+<h2 id="four-practical-rules">Four practical rules</h2>
+<ol>
+<li><strong>Generate it in the build pipeline, not by hand.</strong> A hand-assembled SBOM is out of date the next time a dependency moves.</li>
+<li><strong>Generate it from the artefact you actually ship</strong>, not from a nearby build.</li>
+<li><strong>Regenerate it at every release</strong> that changes the product's composition.</li>
+<li><strong>Store it with the release</strong>, bound to the version, so you can show what was inside on the day it shipped.</li>
+</ol>
+<hr />
+<h2 id="when-it-applies">When it applies</h2>
+<p>The SBOM is part of the Annex I Part II vulnerability handling requirements. The Commission's guidance (C(2026) 5252, paragraph 210) confirms that for products placed on the market before 11 December 2027, those Part II obligations do not apply.</p>
+<p>But the reporting obligations of Article 14 already apply to those same products — and without an inventory of components, you have no reliable way of knowing when you have something to report.</p>
+<aside class="cta"><h2 id="write-the-policy-once">Write the policy once</h2>
+<p>The <strong>CRA 2026 Compliance Pack</strong> includes an SBOM policy and procedure covering format, depth, generation, monitoring and disclosure, ready to adapt.</p>
+<p><strong><a class="btn" href="../#price">See what's inside the pack</a></strong></p></aside>
+<nav class="related" aria-label="Related guides"><h2>Related guides</h2><ul><li><a href="../cra-products-already-on-the-market/">products already on the market</a></li><li><a href="../cra-third-party-component-vulnerability/">third-party components</a></li><li><a href="../cra-annex-vii-technical-documentation/">Annex VII checklist</a></li></ul></nav>
+<h3 id="sources">Sources</h3>
+<ul>
+<li>Regulation (EU) 2024/2847, Annex I Part II point 1; Annex II item 9; Annex VII items 2 and 8; recital 77 — Official Journal of the European Union</li>
+<li>European Commission, Guidance on the application of the CRA, C(2026) 5252, paragraph 210</li>
+</ul>
+<p><em>Position as at 20 September 2026. General information, not legal advice.</em></p>
+</main>
+<footer class="site"><div class="wrap">
+<div><p><strong style="color:var(--navy)">Stavenor</strong> publishes documentation toolkits for the EU Cyber Resilience Act.</p>
+<p>Edition 2026.1. Position as at 20 September 2026. General information, not legal advice. This site sets no cookies and loads nothing from third parties.</p></div>
+<ul><li><a href="../guides/">Guides</a></li><li><a href="../cra-deadline-calculator/">Deadline calculator</a></li>
+<li><a href="https://github.com/stavenor-hq/cra-article-14-reporting-kit">Free reporting kit on GitHub</a></li><li><a href="../legal/">Legal notice and privacy</a></li></ul>
+</div></footer>
+</body>
+</html>
