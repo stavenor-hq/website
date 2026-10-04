@@ -122,6 +122,16 @@ footer.site li{margin-bottom:.45rem}
  .clock div:nth-child(4){animation-delay:1.05s}
  .clock .now::before{transform:scaleX(0);transform-origin:left;animation:bar .7s ease .4s forwards}
 }
+.video{max-width:60rem}
+.video video{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--rule);background:#0F1722}
+.faq{max-width:52rem;border-top:1px solid var(--rule)}
+.faq details{border-bottom:1px solid var(--rule);padding:.95rem 0}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:baseline;gap:1rem;font-family:var(--serif);font-weight:700;color:var(--navy);font-size:1.1rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--sans);font-weight:400;font-size:1.4rem;line-height:1;color:var(--muted);transition:transform .2s ease}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin:.6rem 0 0;max-width:46rem}
+@media (prefers-reduced-motion:reduce){.faq summary::after{transition:none}}
 @keyframes tick{to{opacity:1;transform:none}}
 @keyframes bar{to{transform:scaleX(1)}}
 @media (max-width:760px){
