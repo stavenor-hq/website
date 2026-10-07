@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>When Is the Cloud Part of Your Product Under the CRA?</title>
+<meta name="description" content="Under the Cyber Resilience Act, a cloud backend can be part of your product. The Article 3 test, recital 12&#x27;s smart home example, and what stays out of scope.">
+<link rel="canonical" href="https://stavenor.com/cra-cloud-remote-data-processing/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="When Is the Cloud Part of Your Product Under the CRA?">
+<meta property="og:description" content="Under the Cyber Resilience Act, a cloud backend can be part of your product. The Article 3 test, recital 12&#x27;s smart home example, and what stays out of scope.">
+<meta property="og:url" content="https://stavenor.com/cra-cloud-remote-data-processing/">
+<meta property="og:site_name" content="Stavenor">
+<meta property="og:image" content="https://stavenor.com/assets/stavenor-product-cover.png">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="1200">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14273D">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "When Is the Cloud Part of Your Product Under the CRA?", "description": "Under the Cyber Resilience Act, a cloud backend can be part of your product. The Article 3 test, recital 12's smart home example, and what stays out of scope.", "datePublished": "2026-09-20", "dateModified": "2026-09-20", "author": {"@type": "Organization", "name": "Stavenor"}, "publisher": {"@type": "Organization", "name": "Stavenor"}, "mainEntityOfPage": "https://stavenor.com/cra-cloud-remote-data-processing/"}</script>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="site"><div class="wrap">
+<a class="brand" href="../">Stavenor</a>
+<nav class="main" aria-label="Main">
+<a href="../guides/">Guides</a>
+<a href="../cra-deadline-calculator/"><span class="lg">Deadline calculator</span><span class="sm">Calculator</span></a>
+<a class="btn" href="../#price">The pack</a>
+</nav></div></header>
+<main id="content" class="article">
+<p class="crumbs"><a href="../guides/">Guides</a></p>
+<h1 id="when-is-the-cloud-part-of-your-product-under-the-cra">When Is the Cloud Part of Your Product Under the CRA?</h1>
+<p class="updated"><span>Updated 20 September 2026</span><span>2 min read</span></p>
+<p>Most connected products depend on a backend: an API behind the app, a device cloud, a remote management service. The Cyber Resilience Act can pull that backend into scope as part of your product — or leave it out. The test is in <strong>Article 3</strong>.</p>
+<hr />
+<h2 id="the-two-definitions">The two definitions</h2>
+<p><strong>Article 3(1):</strong> a product with digital elements is <em>a software or hardware product and its remote data processing solutions</em>, including components placed on the market separately.</p>
+<p><strong>Article 3(2):</strong> remote data processing is data processing at a distance whose software is <strong>designed and developed by the manufacturer, or under its responsibility</strong>, and <strong>without which the product could not perform one of its functions</strong>.</p>
+<hr />
+<h2 id="the-test-in-two-questions">The test, in two questions</h2>
+<ol>
+<li>Is the backend software designed and developed by you, or under your responsibility?</li>
+<li>Without it, would the product be unable to perform one of its functions?</li>
+</ol>
+<p>If the answer to both is yes, the backend is part of your product.</p>
+<hr />
+<h2 id="what-recital-12-adds">What recital 12 adds</h2>
+<ul>
+<li>Cloud solutions count as remote data processing <strong>only if they meet that definition</strong>.</li>
+<li><strong>In scope:</strong> cloud functionalities from a smart home device manufacturer that let users control the device at a distance. The Regulation uses exactly this example.</li>
+<li><strong>Out of scope:</strong> websites that do not support the functionality of a product, and cloud services designed and developed outside the manufacturer's responsibility.</li>
+<li>Cloud computing services and models such as <strong>SaaS</strong> fall under <strong>NIS2</strong>, Directive (EU) 2022/2555.</li>
+</ul>
+<hr />
+<h2 id="how-the-test-plays-out">How the test plays out</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Likely outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A thermostat controlled through the manufacturer's own cloud API</td>
+<td>In scope — the textbook case of recital 12</td>
+</tr>
+<tr>
+<td>The backend a companion app cannot work without</td>
+<td>In scope, as remote data processing</td>
+</tr>
+<tr>
+<td>The product's marketing website</td>
+<td>Out — it does not support a product function</td>
+</tr>
+<tr>
+<td>The underlying platform of a third-party cloud provider, as opposed to your own backend code running on it</td>
+<td>Out of the definition</td>
+</tr>
+<tr>
+<td>Software sold only as an online service</td>
+<td>Generally outside the CRA — NIS2 territory</td>
+</tr>
+</tbody>
+</table></div>
+<p>These are readings of the Article 3 test, not rulings. Edge cases deserve a documented decision.</p>
+<hr />
+<h2 id="why-it-matters">Why it matters</h2>
+<p>Because the definition includes them, your remote data processing solutions are part of the product that the CRA's requirements apply to. In practice:
+- a vulnerability in that backend is a vulnerability in your product, so it falls under <a href="../cra-annex-i-essential-requirements/">vulnerability handling</a> and, if actively exploited, under the <a href="../cra-article-14-early-warning/">Article 14 reporting obligations</a>;
+- your component inventory, security testing and support period planning should cover the backend as well as the device.</p>
+<aside class="cta"><h2 id="record-the-scope-decision">Record the scope decision</h2>
+<p>The <strong>CRA 2026 Compliance Pack</strong> includes an applicability and classification statement where you document what is in scope, including remote data processing, and why.</p>
+<p><strong><a class="btn" href="../#price">See what's inside the pack</a></strong></p></aside>
+<nav class="related" aria-label="Related guides"><h2>Related guides</h2><ul><li><a href="../cra-annex-i-essential-requirements/">the 22 Annex I requirements</a></li><li><a href="../cra-third-party-component-vulnerability/">third-party components</a></li><li><a href="../what-is-the-cyber-resilience-act/">what the CRA is</a></li></ul></nav>
+<h3 id="sources">Sources</h3>
+<ul>
+<li>Regulation (EU) 2024/2847, Article 3(1) and 3(2); recital 12 — Official Journal of the European Union</li>
+</ul>
+<p><em>Position as at 20 September 2026. General information, not legal advice.</em></p>
+</main>
+<footer class="site"><div class="wrap">
+<div><p><strong style="color:var(--navy)">Stavenor</strong> publishes documentation toolkits for the EU Cyber Resilience Act.</p>
+<p>Edition 2026.1. Position as at 20 September 2026. General information, not legal advice. This site sets no cookies and loads nothing from third parties.</p></div>
+<ul><li><a href="../guides/">Guides</a></li><li><a href="../cra-deadline-calculator/">Deadline calculator</a></li>
+<li><a href="https://github.com/stavenor-hq/cra-article-14-reporting-kit">Free reporting kit on GitHub</a></li><li><a href="../legal/">Legal notice and privacy</a></li></ul>
+</div></footer>
+</body>
+</html>
